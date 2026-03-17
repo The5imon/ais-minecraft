@@ -1,2 +1,2 @@
-# ais-minecraft
+# AIS Minecraft
 AIS Minecraft Server
