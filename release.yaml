@@ -17,6 +17,11 @@ spec:
       retries: 3
   # Default values
   # https://github.com/itzg/minecraft-server-charts/blob/master/charts/minecraft/values.yaml
+  valuesFrom:
+    - kind: ConfigMap
+      name: mc-whitelist
+      valuesKey: whitelist.txt
+      targetPath: minecraftServer.whitelist
   values:
     minecraftServer:
       eula: true
